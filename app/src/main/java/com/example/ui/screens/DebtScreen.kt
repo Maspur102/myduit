@@ -71,7 +71,12 @@ fun DebtScreen(
                     onClick = { selectedTab = "PIUTANG" },
                     text = {
                         Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(4.dp)) {
-                            Icon(Icons.Default.ArrowOutward, contentDescription = null, size = 16.dp, color = Color(0xFF2E7D32))
+                            Icon(
+                                imageVector = Icons.Default.ArrowOutward,
+                                contentDescription = null,
+                                modifier = Modifier.size(16.dp),
+                                tint = Color(0xFF2E7D32)
+                            )
                             Text("Piutang (Dipinjamkan)", fontWeight = FontWeight.Bold)
                         }
                     }
@@ -81,7 +86,12 @@ fun DebtScreen(
                     onClick = { selectedTab = "HUTANG" },
                     text = {
                         Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(4.dp)) {
-                            Icon(Icons.Default.CallReceived, contentDescription = null, size = 16.dp, color = Color(0xFFC62828))
+                            Icon(
+                                imageVector = Icons.Default.CallReceived,
+                                contentDescription = null,
+                                modifier = Modifier.size(16.dp),
+                                tint = Color(0xFFC62828)
+                            )
                             Text("Hutang (Dipinjam)", fontWeight = FontWeight.Bold)
                         }
                     }
@@ -497,14 +507,4 @@ fun DebtScreen(
             }
         )
     }
-}
-// Workaround helper to fix size parameter conflict
-@Composable
-private fun Icon(imageVector: androidx.compose.ui.graphics.vector.ImageVector, contentDescription: String?, size: androidx.compose.ui.unit.Dp, color: Color) {
-    Icon(
-        imageVector = imageVector,
-        contentDescription = contentDescription,
-        modifier = Modifier.size(size),
-        tint = color
-    )
 }

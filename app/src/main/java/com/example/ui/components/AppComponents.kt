@@ -272,7 +272,7 @@ fun CategoryDonutChart(
     ) {
         Column(modifier = Modifier.padding(16.dp)) {
             Text(
-                titleText = "Persentase Pengeluaran per Kategori",
+                text = "Persentase Pengeluaran per Kategori",
                 style = MaterialTheme.typography.titleSmall,
                 fontWeight = FontWeight.Bold,
                 modifier = Modifier.padding(bottom = 16.dp)
@@ -357,12 +357,6 @@ fun CategoryDonutChart(
             }
         }
     }
-}
-
-// Workaround for Compose title text
-@Composable
-private fun Text(titleText: String, style: androidx.compose.ui.text.TextStyle, fontWeight: FontWeight, modifier: Modifier) {
-    Text(text = titleText, style = style, fontWeight = fontWeight, modifier = modifier)
 }
 
 /**
