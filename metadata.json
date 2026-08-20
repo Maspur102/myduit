@@ -1,0 +1,6 @@
+{
+  "name": "Catatan Keuangan",
+  "description": "Aplikasi pencatatan keuangan pribadi dengan sinkronisasi bank otomatis (simulasi), pelacakan hutang-piutang mendalam, dukungan multi-mata uang, dan grafik tren belanja.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
